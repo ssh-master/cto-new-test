@@ -36,7 +36,7 @@ public interface PlayerDao {
     Single<PlayerEntity> getPlayerById(long playerId);
     
     @Query("SELECT * FROM players WHERE telegram_user_id = :telegramUserId")
-    Single<PlayerEntity> getPlayerByTelegramId(String telegramUserId);
+    Single<PlayerEntity> getPlayerByTelegramUserId(String telegramUserId);
     
     @Query("SELECT * FROM players ORDER BY skill_rating DESC")
     Flowable<List<PlayerEntity>> getAllPlayersByRating();

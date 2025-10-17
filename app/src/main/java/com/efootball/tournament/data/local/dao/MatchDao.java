@@ -36,7 +36,7 @@ public interface MatchDao {
     Single<MatchEntity> getMatchById(long matchId);
     
     @Query("SELECT * FROM matches WHERE tournament_id = :tournamentId ORDER BY scheduled_time ASC")
-    Flowable<List<MatchEntity>> getMatchesByTournament(long tournamentId);
+    Flowable<List<MatchEntity>> getMatchesByTournamentId(long tournamentId);
     
     @Query("SELECT * FROM matches WHERE tournament_id = :tournamentId AND phase = :phase ORDER BY round, scheduled_time")
     Flowable<List<MatchEntity>> getMatchesByTournamentAndPhase(long tournamentId, int phase);
