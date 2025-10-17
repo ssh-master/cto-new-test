@@ -13,6 +13,7 @@ The eFootball Tournament Platform is designed to coordinate multi-phase tourname
 ## Document Map
 - [Todo Tracker](todo.md)
 - [Completed Work Log](done.md)
+- [QA Issues Log](issues.md)
 - [Architecture Blueprint](architecture.md)
 - [Database Schema](database-schema.md)
 - [API Design](api-design.md)
